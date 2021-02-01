@@ -1,0 +1,662 @@
+game.Players.LocalPlayer.CharacterAdded:connect(function(char)
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Main = Instance.new("ScreenGui")
+local MainDrag = Instance.new("Frame")
+local Main_2 = Instance.new("Frame")
+local Weapons = Instance.new("Frame")
+local ACR = Instance.new("TextButton")
+local M98B = Instance.new("TextButton")
+local SW638 = Instance.new("TextButton")
+local Revolver = Instance.new("TextButton")
+local M60 = Instance.new("TextButton")
+local AK47U = Instance.new("TextButton")
+local Dragunov = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Functions = Instance.new("Frame")
+local Gamepass = Instance.new("TextButton")
+local Noclip = Instance.new("TextButton")
+local GiveEveryItem = Instance.new("TextButton")
+local TazeEnemies = Instance.new("TextButton")
+local KillEnemies = Instance.new("TextButton")
+local AdminCmd = Instance.new("TextButton")
+local Clip = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Teleport = Instance.new("Frame")
+local Cells = Instance.new("TextButton")
+local Security = Instance.new("TextButton")
+local Courtyard = Instance.new("TextButton")
+local Jailtop = Instance.new("TextButton")
+local Helipad = Instance.new("TextButton")
+local Vents = Instance.new("TextButton")
+local Cake = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+
+--Properties:
+
+Main.Name = "Main"
+Main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+MainDrag.Name = "MainDrag"
+MainDrag.Parent = Main
+MainDrag.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+MainDrag.BorderColor3 = Color3.fromRGB(255, 255, 255)
+MainDrag.BorderSizePixel = 0
+MainDrag.Position = UDim2.new(0.138849929, 0, 0.190443531, 0)
+MainDrag.Size = UDim2.new(0, 514, 0, 32)
+
+Main_2.Name = "Main"
+Main_2.Parent = MainDrag
+Main_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Main_2.Position = UDim2.new(0, 0, 0.98045373, 0)
+Main_2.Size = UDim2.new(0, 514, 0, 302)
+
+Weapons.Name = "Weapons"
+Weapons.Parent = Main_2
+Weapons.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Weapons.BorderColor3 = Color3.fromRGB(85, 0, 0)
+Weapons.Position = UDim2.new(0.719844341, 0, 0.0728476793, 0)
+Weapons.Size = UDim2.new(0, 144, 0, 280)
+
+ACR.Name = "ACR"
+ACR.Parent = Weapons
+ACR.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ACR.BorderColor3 = Color3.fromRGB(30, 30, 30)
+ACR.BorderSizePixel = 2
+ACR.Position = UDim2.new(0.1502226, 0, 0.041674532, 0)
+ACR.Size = UDim2.new(0, 100, 0, 28)
+ACR.Font = Enum.Font.SourceSans
+ACR.Text = "ACR"
+ACR.TextColor3 = Color3.fromRGB(255, 255, 255)
+ACR.TextSize = 14.000
+
+M98B.Name = "M98B"
+M98B.Parent = Weapons
+M98B.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+M98B.BorderColor3 = Color3.fromRGB(30, 30, 30)
+M98B.BorderSizePixel = 2
+M98B.Position = UDim2.new(0.1502226, 0, 0.695245981, 0)
+M98B.Size = UDim2.new(0, 100, 0, 28)
+M98B.Font = Enum.Font.SourceSans
+M98B.Text = "M98B"
+M98B.TextColor3 = Color3.fromRGB(255, 255, 255)
+M98B.TextSize = 14.000
+
+SW638.Name = "S&W 638"
+SW638.Parent = Weapons
+SW638.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+SW638.BorderColor3 = Color3.fromRGB(30, 30, 30)
+SW638.BorderSizePixel = 2
+SW638.Position = UDim2.new(0.1502226, 0, 0.570245981, 0)
+SW638.Size = UDim2.new(0, 100, 0, 28)
+SW638.Font = Enum.Font.SourceSans
+SW638.Text = "S&W 638"
+SW638.TextColor3 = Color3.fromRGB(255, 255, 255)
+SW638.TextSize = 14.000
+
+Revolver.Name = "Revolver"
+Revolver.Parent = Weapons
+Revolver.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Revolver.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Revolver.BorderSizePixel = 2
+Revolver.Position = UDim2.new(0.1502226, 0, 0.441674531, 0)
+Revolver.Size = UDim2.new(0, 100, 0, 28)
+Revolver.Font = Enum.Font.SourceSans
+Revolver.Text = "Revolver"
+Revolver.TextColor3 = Color3.fromRGB(255, 255, 255)
+Revolver.TextSize = 14.000
+
+M60.Name = "M60"
+M60.Parent = Weapons
+M60.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+M60.BorderColor3 = Color3.fromRGB(30, 30, 30)
+M60.BorderSizePixel = 2
+M60.Position = UDim2.new(0.1502226, 0, 0.316674531, 0)
+M60.Size = UDim2.new(0, 100, 0, 28)
+M60.Font = Enum.Font.SourceSans
+M60.Text = "M60"
+M60.TextColor3 = Color3.fromRGB(255, 255, 255)
+M60.TextSize = 14.000
+
+AK47U.Name = "AK47-U"
+AK47U.Parent = Weapons
+AK47U.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AK47U.BorderColor3 = Color3.fromRGB(30, 30, 30)
+AK47U.BorderSizePixel = 2
+AK47U.Position = UDim2.new(0.1502226, 0, 0.184531689, 0)
+AK47U.Size = UDim2.new(0, 100, 0, 28)
+AK47U.Font = Enum.Font.SourceSans
+AK47U.Text = "AK47-U"
+AK47U.TextColor3 = Color3.fromRGB(255, 255, 255)
+AK47U.TextSize = 14.000
+
+Dragunov.Name = "Dragunov"
+Dragunov.Parent = Weapons
+Dragunov.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Dragunov.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Dragunov.BorderSizePixel = 2
+Dragunov.Position = UDim2.new(0.1502226, 0, 0.820245981, 0)
+Dragunov.Size = UDim2.new(0, 100, 0, 28)
+Dragunov.Font = Enum.Font.SourceSans
+Dragunov.Text = "Dragunov"
+Dragunov.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dragunov.TextSize = 14.000
+
+TextLabel.Parent = Weapons
+TextLabel.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextLabel.BorderColor3 = Color3.fromRGB(85, 0, 0)
+TextLabel.Position = UDim2.new(0.267942071, 0, -0.061548017, 0)
+TextLabel.Size = UDim2.new(0, 66, 0, 17)
+TextLabel.Font = Enum.Font.Roboto
+TextLabel.Text = "Weapons"
+TextLabel.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextLabel.TextSize = 14.000
+
+Functions.Name = "Functions"
+Functions.Parent = Main_2
+Functions.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Functions.BorderColor3 = Color3.fromRGB(85, 0, 0)
+Functions.Position = UDim2.new(0.359922171, 0, 0.0728476793, 0)
+Functions.Size = UDim2.new(0, 144, 0, 280)
+
+Gamepass.Name = "Gamepass"
+Gamepass.Parent = Functions
+Gamepass.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Gamepass.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Gamepass.BorderSizePixel = 2
+Gamepass.Position = UDim2.new(0.1502226, 0, 0.041674532, 0)
+Gamepass.Size = UDim2.new(0, 100, 0, 28)
+Gamepass.Font = Enum.Font.SourceSans
+Gamepass.Text = "GetAllGamepass"
+Gamepass.TextColor3 = Color3.fromRGB(255, 255, 255)
+Gamepass.TextSize = 14.000
+
+Noclip.Name = "Noclip"
+Noclip.Parent = Functions
+Noclip.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Noclip.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Noclip.BorderSizePixel = 2
+Noclip.Position = UDim2.new(0.1502226, 0, 0.695245981, 0)
+Noclip.Size = UDim2.new(0, 100, 0, 28)
+Noclip.Font = Enum.Font.SourceSans
+Noclip.Text = "Noclip"
+Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.TextSize = 14.000
+
+GiveEveryItem.Name = "GiveEveryItem"
+GiveEveryItem.Parent = Functions
+GiveEveryItem.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+GiveEveryItem.BorderColor3 = Color3.fromRGB(30, 30, 30)
+GiveEveryItem.BorderSizePixel = 2
+GiveEveryItem.Position = UDim2.new(0.1502226, 0, 0.570245981, 0)
+GiveEveryItem.Size = UDim2.new(0, 100, 0, 28)
+GiveEveryItem.Font = Enum.Font.SourceSans
+GiveEveryItem.Text = "GiveEveryItem"
+GiveEveryItem.TextColor3 = Color3.fromRGB(255, 255, 255)
+GiveEveryItem.TextSize = 14.000
+
+TazeEnemies.Name = "TazeEnemies"
+TazeEnemies.Parent = Functions
+TazeEnemies.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TazeEnemies.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TazeEnemies.BorderSizePixel = 2
+TazeEnemies.Position = UDim2.new(0.1502226, 0, 0.441674531, 0)
+TazeEnemies.Size = UDim2.new(0, 100, 0, 28)
+TazeEnemies.Font = Enum.Font.SourceSans
+TazeEnemies.Text = "TazeEnemies"
+TazeEnemies.TextColor3 = Color3.fromRGB(255, 255, 255)
+TazeEnemies.TextSize = 14.000
+
+KillEnemies.Name = "KillEnemies"
+KillEnemies.Parent = Functions
+KillEnemies.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+KillEnemies.BorderColor3 = Color3.fromRGB(30, 30, 30)
+KillEnemies.BorderSizePixel = 2
+KillEnemies.Position = UDim2.new(0.1502226, 0, 0.316674531, 0)
+KillEnemies.Size = UDim2.new(0, 100, 0, 28)
+KillEnemies.Font = Enum.Font.SourceSans
+KillEnemies.Text = "KillEnemies"
+KillEnemies.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillEnemies.TextSize = 14.000
+
+AdminCmd.Name = "AdminCmd"
+AdminCmd.Parent = Functions
+AdminCmd.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AdminCmd.BorderColor3 = Color3.fromRGB(30, 30, 30)
+AdminCmd.BorderSizePixel = 2
+AdminCmd.Position = UDim2.new(0.1502226, 0, 0.184531689, 0)
+AdminCmd.Size = UDim2.new(0, 100, 0, 28)
+AdminCmd.Font = Enum.Font.SourceSans
+AdminCmd.Text = "AdminCommands"
+AdminCmd.TextColor3 = Color3.fromRGB(255, 255, 255)
+AdminCmd.TextSize = 14.000
+
+Clip.Name = "Clip"
+Clip.Parent = Functions
+Clip.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Clip.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Clip.BorderSizePixel = 2
+Clip.Position = UDim2.new(0.1502226, 0, 0.820245981, 0)
+Clip.Size = UDim2.new(0, 100, 0, 28)
+Clip.Font = Enum.Font.SourceSans
+Clip.Text = "Clip"
+Clip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Clip.TextSize = 14.000
+
+TextLabel_2.Parent = Functions
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextLabel_2.BorderColor3 = Color3.fromRGB(85, 0, 0)
+TextLabel_2.Position = UDim2.new(0.267942071, 0, -0.061548017, 0)
+TextLabel_2.Size = UDim2.new(0, 66, 0, 17)
+TextLabel_2.Font = Enum.Font.Roboto
+TextLabel_2.Text = "Functions"
+TextLabel_2.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+Teleport.Name = "Teleport"
+Teleport.Parent = Main_2
+Teleport.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Teleport.BorderColor3 = Color3.fromRGB(85, 0, 0)
+Teleport.Position = UDim2.new(0, 0, 0.0728476793, 0)
+Teleport.Size = UDim2.new(0, 144, 0, 280)
+
+Cells.Name = "Cells"
+Cells.Parent = Teleport
+Cells.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Cells.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Cells.BorderSizePixel = 2
+Cells.Position = UDim2.new(0.1502226, 0, 0.041674532, 0)
+Cells.Size = UDim2.new(0, 100, 0, 28)
+Cells.Font = Enum.Font.SourceSans
+Cells.Text = "Cells"
+Cells.TextColor3 = Color3.fromRGB(255, 255, 255)
+Cells.TextSize = 14.000
+
+Security.Name = "Security"
+Security.Parent = Teleport
+Security.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Security.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Security.BorderSizePixel = 2
+Security.Position = UDim2.new(0.1502226, 0, 0.695245981, 0)
+Security.Size = UDim2.new(0, 100, 0, 28)
+Security.Font = Enum.Font.SourceSans
+Security.Text = "Security"
+Security.TextColor3 = Color3.fromRGB(255, 255, 255)
+Security.TextSize = 14.000
+
+Courtyard.Name = "Courtyard"
+Courtyard.Parent = Teleport
+Courtyard.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Courtyard.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Courtyard.BorderSizePixel = 2
+Courtyard.Position = UDim2.new(0.1502226, 0, 0.570245981, 0)
+Courtyard.Size = UDim2.new(0, 100, 0, 28)
+Courtyard.Font = Enum.Font.SourceSans
+Courtyard.Text = "Courtyard"
+Courtyard.TextColor3 = Color3.fromRGB(255, 255, 255)
+Courtyard.TextSize = 14.000
+
+Jailtop.Name = "Jailtop"
+Jailtop.Parent = Teleport
+Jailtop.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Jailtop.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Jailtop.BorderSizePixel = 2
+Jailtop.Position = UDim2.new(0.1502226, 0, 0.441674531, 0)
+Jailtop.Size = UDim2.new(0, 100, 0, 28)
+Jailtop.Font = Enum.Font.SourceSans
+Jailtop.Text = "Jailtop"
+Jailtop.TextColor3 = Color3.fromRGB(255, 255, 255)
+Jailtop.TextSize = 14.000
+
+Helipad.Name = "Helipad"
+Helipad.Parent = Teleport
+Helipad.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Helipad.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Helipad.BorderSizePixel = 2
+Helipad.Position = UDim2.new(0.1502226, 0, 0.316674531, 0)
+Helipad.Size = UDim2.new(0, 100, 0, 28)
+Helipad.Font = Enum.Font.SourceSans
+Helipad.Text = "Helipad"
+Helipad.TextColor3 = Color3.fromRGB(255, 255, 255)
+Helipad.TextSize = 14.000
+
+Vents.Name = "Vents"
+Vents.Parent = Teleport
+Vents.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Vents.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Vents.BorderSizePixel = 2
+Vents.Position = UDim2.new(0.1502226, 0, 0.184531689, 0)
+Vents.Size = UDim2.new(0, 100, 0, 28)
+Vents.Font = Enum.Font.SourceSans
+Vents.Text = "Vents"
+Vents.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vents.TextSize = 14.000
+
+Cake.Name = "Cake"
+Cake.Parent = Teleport
+Cake.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Cake.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Cake.BorderSizePixel = 2
+Cake.Position = UDim2.new(0.1502226, 0, 0.820245981, 0)
+Cake.Size = UDim2.new(0, 100, 0, 28)
+Cake.Font = Enum.Font.SourceSans
+Cake.Text = "Cake"
+Cake.TextColor3 = Color3.fromRGB(255, 255, 255)
+Cake.TextSize = 14.000
+
+TextLabel_3.Parent = Teleport
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextLabel_3.BorderColor3 = Color3.fromRGB(85, 0, 0)
+TextLabel_3.Position = UDim2.new(0.267942071, 0, -0.061548017, 0)
+TextLabel_3.Size = UDim2.new(0, 66, 0, 17)
+TextLabel_3.Font = Enum.Font.Roboto
+TextLabel_3.Text = "Teleport"
+TextLabel_3.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextLabel_3.TextSize = 14.000
+
+TextLabel_4.Parent = MainDrag
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TextLabel_4.BorderColor3 = Color3.fromRGB(35, 35, 35)
+TextLabel_4.Position = UDim2.new(0.305447459, 0, 0.21875, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 17)
+TextLabel_4.Font = Enum.Font.Roboto
+TextLabel_4.Text = "Project: THG Science Experince"
+TextLabel_4.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextLabel_4.TextSize = 14.000
+
+TextLabel_5.Parent = MainDrag
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextLabel_5.BorderColor3 = Color3.fromRGB(40, 40, 40)
+TextLabel_5.Position = UDim2.new(0.348249018, 0, 9.875, 0)
+TextLabel_5.Size = UDim2.new(0, 157, 0, 17)
+TextLabel_5.Font = Enum.Font.Roboto
+TextLabel_5.Text = "Hide/Open Key: RightControl"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 14.000
+
+-- Scripts:
+
+local function TTWFIW_fake_script() -- MainDrag.LocalScript 
+	local script = Instance.new('LocalScript', MainDrag)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+	
+	local UserInputService = game:GetService('UserInputService')
+	
+	function onInputBegan(input,gameProcessed)
+		if input.KeyCode == Enum.KeyCode.RightControl then
+	     yara()
+		end
+	end
+	
+	UserInputService.InputBegan:connect(onInputBegan)
+	
+	function yara()
+	 if(script.Parent.Visible == true) then
+	  script.Parent.Visible = false;
+	 else
+	  script.Parent.Visible = true;
+	 end
+	end
+end
+coroutine.wrap(TTWFIW_fake_script)()
+local function HQKXBZZ_fake_script() -- ACR.LocalScript 
+	local script = Instance.new('LocalScript', ACR)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Workspace.resources.RemoteFunction:InvokeServer("giveItem", (script.Parent.Text))
+	end)
+end
+coroutine.wrap(HQKXBZZ_fake_script)()
+local function POFKM_fake_script() -- M98B.LocalScript 
+	local script = Instance.new('LocalScript', M98B)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Workspace.resources.RemoteFunction:InvokeServer("giveItem", (script.Parent.Text))
+	end)
+end
+coroutine.wrap(POFKM_fake_script)()
+local function RBMH_fake_script() -- SW638.LocalScript 
+	local script = Instance.new('LocalScript', SW638)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Workspace.resources.RemoteFunction:InvokeServer("giveItem", (script.Parent.Text))
+	end)
+end
+coroutine.wrap(RBMH_fake_script)()
+local function XNNUI_fake_script() -- Revolver.LocalScript 
+	local script = Instance.new('LocalScript', Revolver)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Workspace.resources.RemoteFunction:InvokeServer("giveItem", (script.Parent.Text))
+	end)
+end
+coroutine.wrap(XNNUI_fake_script)()
+local function XDAKHT_fake_script() -- M60.LocalScript 
+	local script = Instance.new('LocalScript', M60)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Workspace.resources.RemoteFunction:InvokeServer("giveItem", (script.Parent.Text))
+	end)
+end
+coroutine.wrap(XDAKHT_fake_script)()
+local function LITD_fake_script() -- AK47U.LocalScript 
+	local script = Instance.new('LocalScript', AK47U)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Workspace.resources.RemoteFunction:InvokeServer("giveItem", (script.Parent.Text))
+	end)
+end
+coroutine.wrap(LITD_fake_script)()
+local function NRIFC_fake_script() -- Dragunov.LocalScript 
+	local script = Instance.new('LocalScript', Dragunov)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Workspace.resources.RemoteFunction:InvokeServer("giveItem", (script.Parent.Text))
+	end)
+end
+coroutine.wrap(NRIFC_fake_script)()
+local function RXIY_fake_script() -- Gamepass.LocalScript 
+	local script = Instance.new('LocalScript', Gamepass)
+
+	script.Parent.MouseButton1Click:connect(function()
+		game.Workspace.resources.RemoteFunction:InvokeServer("setDataValue", "hasSwat", true)
+	
+	
+	
+		game.Workspace.resources.RemoteFunction:InvokeServer("setDataValue", "hasSpecOps", true)
+	
+	
+	
+		game.Workspace.resources.RemoteFunction:InvokeServer("setDataValue", "hasMerc", true)
+	
+	
+	
+		game.Workspace.resources.RemoteFunction:InvokeServer("setDataValue", "hasPilot", true)
+	
+	
+	
+		game.Workspace.resources.RemoteFunction:InvokeServer("setDataValue", "hasAtv", true)
+	end)
+end
+coroutine.wrap(RXIY_fake_script)()
+local function VUTGRHJ_fake_script() -- Noclip.LocalScript 
+	local script = Instance.new('LocalScript', Noclip)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local noclip = true char = game.Players.LocalPlayer.Character while true do if noclip == true then for _,v in pairs(char:children()) do pcall(function() if v.className == "Part" then v.CanCollide = false elseif v.ClassName == "Model" then v.Head.CanCollide = false end end) end end game:service("RunService").Stepped:wait() end
+	end)
+end
+coroutine.wrap(VUTGRHJ_fake_script)()
+local function GQSGKMB_fake_script() -- GiveEveryItem.LocalScript 
+	local script = Instance.new('LocalScript', GiveEveryItem)
+
+	script.Parent.MouseButton1Click:connect(function()
+		game.Workspace.resources.RemoteFunction:InvokeServer("giveItem", "M98B")
+		game.Workspace.resources.RemoteFunction:InvokeServer("giveItem", "Revolver")
+		game.Workspace.resources.RemoteFunction:InvokeServer("giveItem", "UMP-45")
+		game.Workspace.resources.RemoteFunction:InvokeServer("giveItem", "Parachute")
+		game.Workspace.resources.RemoteFunction:InvokeServer("giveItem", "ACR")
+		game.Workspace.resources.RemoteFunction:InvokeServer("giveItem", "M60")
+		game.Workspace.resources.RemoteFunction:InvokeServer("giveItem", "add more if u find")
+		game.Workspace.resources.RemoteFunction:InvokeServer("giveItem", "Fake ID Card")
+	end)
+end
+coroutine.wrap(GQSGKMB_fake_script)()
+local function YIJIR_fake_script() -- TazeEnemies.LocalScript 
+	local script = Instance.new('LocalScript', TazeEnemies)
+
+	script.Parent.MouseButton1Click:connect(function()
+		for _, v in pairs(game.Players:GetChildren()) do
+			game.Workspace.resources.RemoteEvent:FireServer("tase", v) --keep in mind friendly fire is off
+		end
+	end)
+end
+coroutine.wrap(YIJIR_fake_script)()
+local function UFCCR_fake_script() -- KillEnemies.LocalScript 
+	local script = Instance.new('LocalScript', KillEnemies)
+
+	script.Parent.MouseButton1Click:connect(function()
+		for _, v in pairs(game.Players:GetChildren()) do
+			game.Workspace.resources.RemoteEvent:FireServer("dealDamage", v.Character.Humanoid, 100) --keep in mind friendly fire is off
+		end
+	end)
+end
+coroutine.wrap(UFCCR_fake_script)()
+local function GTNO_fake_script() -- AdminCmd.LocalScript 
+	local script = Instance.new('LocalScript', AdminCmd)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "Admin Commands";
+			Text = "Commands: :kill :arrest :taze :team :get (/e supported) ";
+	
+			Duration = math.random(5, 10);
+			Button1 = "nice!";
+	
+		})
+		warn("Loading PruinaTempestatis' Redwood Prison's Commands Script")
+		game.Players.LocalPlayer.Chatted:connect(function(a)
+			local function b(ca)
+				for da,_b in
+					pairs(game:GetService("Players"):GetPlayers())do if
+						ca:lower()==_b.Name:sub(1,ca:len()):lower()then return _b end end;return nil end;local function c(ca)
+				game:GetService("Workspace").resources.RemoteEvent:FireServer("cuff",ca)end;local function d(ca)
+				game:GetService("Workspace").resources.RemoteEvent:FireServer("dealDamage",ca,100)end;local function _a(ca)
+				game:GetService("Workspace").resources.RemoteEvent:FireServer("tase",ca)end;local function aa(ca)
+				game:GetService("Workspace").resources.RemoteFunction:InvokeServer("requestTeam",ca)end
+			local function ba(ca,da)
+				if ca and da then
+					game:GetService("Workspace").resources.RemoteFunction:InvokeServer("giveItem","M98B")
+					game:GetService("Workspace").resources.RemoteFunction:InvokeServer("giveItem","ACR")
+					game:GetService("Workspace").resources.RemoteFunction:InvokeServer("giveItem","L86A2")
+					game:GetService("Workspace").resources.RemoteFunction:InvokeServer("giveItem","Parachute")
+					game:GetService("Workspace").resources.RemoteFunction:InvokeServer("giveItem","Fake ID Card")else
+					game:GetService("Workspace").resources.RemoteFunction:InvokeServer("giveItem",ca)end end
+			if a:lower():sub(1,8)==":arrest "then
+				if
+					a:lower():sub(9)=="all"then for ca,da in
+						pairs(game:GetService("Players"):GetPlayers())do c(da)end else local ca=b(a:sub(9))c(ca)end elseif a:lower():sub(1,11)=="/e :arrest "then
+				if a:lower():sub(12)==
+					"all"then for ca,da in
+						pairs(game:GetService("Players"):GetPlayers())do c(da)end else local ca=b(a:sub(12))c(ca)end elseif a:lower():sub(1,6)==":kill "then
+				if
+					a:lower():sub(7)=="all"then
+					for ca,da in
+						pairs(game:GetService("Players"):GetPlayers())do d(da.Character.Humanoid)end else local ca=b(a:sub(7))d(ca.Character.Humanoid)end elseif a:lower():sub(1,9)=="/e :kill "then
+				if
+					a:lower():sub(10)=="all"then
+					for ca,da in
+						pairs(game:GetService("Players"):GetPlayers())do d(da.Character.Humanoid)end else local ca=b(a:sub(10))d(ca.Character.Humanoid)end elseif a:lower():sub(1,6)==":taze "then
+				if
+					a:lower():sub(7)=="all"then for ca,da in
+						pairs(game:GetService("Players"):GetPlayers())do _a(da)end else local ca=b(a:sub(7))_a(ca)end elseif a:lower():sub(1,9)=="/e :taze "then if
+					a:lower():sub(10)=="all"then for ca,da in
+						pairs(game:GetService("Players"):GetPlayers())do _a(da)end else local ca=b(a:sub(10))
+					_a(ca)end elseif
+				a:lower():sub(1,6)==":team "then aa(a:lower():sub(7))elseif
+				a:lower():sub(1,9)=="/e :team "then aa(a:sub(10))elseif
+				a:lower():sub(1,5)==":get "then if a:lower():sub(6)=="default"then ba(true,true)else
+					ba(a:sub(6),false)end elseif
+				a:lower():sub(1,8)=="/e :get "then if a:lower():sub(9)=="default"then ba(true,true)else
+					ba(a:sub(9),false)end end end)
+		warn("Successfully Loaded PruinaTempestatis' Redwood Prison's Commands Script")
+		warn("If you encounter any problems, please send a message to Pruina on v3rmillion. If you can't find my profile, here's the link to it: https://v3rmillion.net/member.php?action=profile&uid=542928")
+	end)
+end
+coroutine.wrap(GTNO_fake_script)()
+local function DTVU_fake_script() -- Clip.LocalScript 
+	local script = Instance.new('LocalScript', Clip)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local noclip = true char = game.Players.LocalPlayer.Character while true do if noclip == true then for _,v in pairs(char:children()) do pcall(function() if v.className == "Part" then v.CanCollide = true elseif v.ClassName == "Model" then v.Head.CanCollide = true end end) end end game:service("RunService").Stepped:wait() end
+	end)
+end
+coroutine.wrap(DTVU_fake_script)()
+local function TLXWJWA_fake_script() -- Cells.LocalScript 
+	local script = Instance.new('LocalScript', Cells)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-2.1252234, 3.99408817, 38.6809654))
+	end)
+end
+coroutine.wrap(TLXWJWA_fake_script)()
+local function KUCWWG_fake_script() -- Security.LocalScript 
+	local script = Instance.new('LocalScript', Security)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(66.4363861, 4, 4.59404564))
+	end)
+end
+coroutine.wrap(KUCWWG_fake_script)()
+local function DRNF_fake_script() -- Courtyard.LocalScript 
+	local script = Instance.new('LocalScript', Courtyard)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(243.07106, 2.3200254, -80.9014206))
+	end)
+end
+coroutine.wrap(DRNF_fake_script)()
+local function FWEP_fake_script() -- Jailtop.LocalScript 
+	local script = Instance.new('LocalScript', Jailtop)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(105.896927, 34, 12.4054184))
+	end)
+end
+coroutine.wrap(FWEP_fake_script)()
+local function ZNFANQ_fake_script() -- Helipad.LocalScript 
+	local script = Instance.new('LocalScript', Helipad)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(263.467377, 6.9100132, 113.983261))
+	end)
+end
+coroutine.wrap(ZNFANQ_fake_script)()
+local function BXMB_fake_script() -- Vents.LocalScript 
+	local script = Instance.new('LocalScript', Vents)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(45.8967972, 17, 88.6420212))
+	end)
+end
+coroutine.wrap(BXMB_fake_script)()
+local function TFRHO_fake_script() -- Cake.LocalScript 
+	local script = Instance.new('LocalScript', Cake)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(108.500664, 4, -27.2045383))
+	end)
+end
+coroutine.wrap(TFRHO_fake_script)()
+ 
+char.ChildAdded:connect(function(ch)
+print(ch.Name)
+end)
+end)
